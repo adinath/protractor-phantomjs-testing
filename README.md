@@ -5,7 +5,7 @@ Testing using PhantomJS with Protractor
 
 ## Setup
 
-``` javascript
+``` sh
 $ npm install
 $ node_modules/protractor/bin/webdriver-manager update
 ```
@@ -15,12 +15,12 @@ And make sure `java` is installed and on your `PATH`.
 ## Execution
 
 In one terminal window, start the webdriver manager:
-``` javascript
+``` sh
 $ node_modules/protractor/bin/webdriver-manager start
 ```
 
 And in another terminal window, run the test spec:
-``` javascript
+``` sh
 $ node_modules/protractor/bin/protractor protractor.conf.js
 ```
 
