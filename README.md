@@ -36,12 +36,12 @@ And in another terminal window, run the test specs.
 
 If you want to run each Protractor test individually against a separate instance of `phantomjs`:
 ``` sh
-$ run_tests_individually.bash
+$ ./run_tests_individually.bash
 ```
 
 And to run all Protractor tests together against one instance of `phantomjs`:
 ``` sh
-$ run_tests_together.bash
+$ ./run_tests_together.bash
 ```
 
 ## My results
