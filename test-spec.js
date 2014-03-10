@@ -10,15 +10,6 @@ describe('simple protractor test', function () {
         };
     });
 
-    it('angularjs: should pass basic test of data binding on AngularJS page', function () {
-        var location = locations.angularjs,
-            name = 'Bruce';
-
-        console.log('Browsing', location);
-        browser.get(location);
-        element(by.model('yourName')).sendKeys(name);
-        expect(element(by.binding('yourName')).getText()).toEqual('Hello ' + name + '!');
-    });
     it('mcalthrop: should get text from named id', function () {
         var location = locations.mcalthrop;
 
@@ -34,5 +25,14 @@ describe('simple protractor test', function () {
         browser.get(location);
         element(by.model('yourName')).sendKeys(name);
         expect(element(by.binding('yourName')).getText()).toEqual('Hello ' + name);
+    });
+    it('angularjs: should pass basic test of data binding on AngularJS page', function () {
+        var location = locations.angularjs,
+            name = 'Bruce';
+
+        console.log('Browsing', location);
+        browser.get(location);
+        element(by.model('yourName')).sendKeys(name);
+        expect(element(by.binding('yourName')).getText()).toEqual('Hello ' + name + '!');
     });
 });
