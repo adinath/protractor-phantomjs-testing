@@ -6,11 +6,11 @@ describe('simple protractor test', function () {
     beforeEach(function () {
         locations = {
             angularjs: 'http://www.angularjs.org',
-            mcalthropWithEotFont: 'http://mcalthrop.github.io/protractor-phantomjs-testing-with-eot-font.html',
-            mcalthropWithSvgFont: 'http://mcalthrop.github.io/protractor-phantomjs-testing-with-svg-font.html',
-            mcalthropWithTtfFont: 'http://mcalthrop.github.io/protractor-phantomjs-testing-with-ttf-font.html',
-            mcalthropWithWoffFont: 'http://mcalthrop.github.io/protractor-phantomjs-testing-with-woff-font.html',
-            mcalthropWithAllFonts: 'http://mcalthrop.github.io/protractor-phantomjs-testing-with-fonts.html'
+            mcalthropWithEotFont: 'http://mcalthrop.github.io/protractor-phantomjs-testing/index-with-eot-font.html',
+            mcalthropWithSvgFont: 'http://mcalthrop.github.io/protractor-phantomjs-testing/index-with-svg-font.html',
+            mcalthropWithTtfFont: 'http://mcalthrop.github.io/protractor-phantomjs-testing/index-with-ttf-font.html',
+            mcalthropWithWoffFont: 'http://mcalthrop.github.io/protractor-phantomjs-testing/index-with-woff-font.html',
+            mcalthropWithAllFonts: 'http://mcalthrop.github.io/protractor-phantomjs-testing/index.html'
         };
     });
 
