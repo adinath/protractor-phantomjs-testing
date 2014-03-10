@@ -31,14 +31,14 @@ describe('simple protractor test', function () {
         element(by.model('yourName')).sendKeys(name);
         expect(element(by.binding('yourName')).getText()).toEqual('Hello ' + name);
     });
-    it('mcalthrop (with all EOT font): should get text from named id', function () {
+    it('mcalthrop (with EOT font): should get text from named id', function () {
         var location = locations.mcalthropWithEotFont;
 
         console.log('Browsing', location);
         browser.get(location);
         expect(element(by.id('test-id')).getText()).toEqual('test text');
     });
-    it('mcalthrop (with all EOT font): should pass basic test of data binding', function () {
+    it('mcalthrop (with EOT font): should pass basic test of data binding', function () {
         var location = locations.mcalthropWithEotFont,
             name = 'Bruce';
 
