@@ -17,7 +17,7 @@ describe('simple protractor test', function () {
         browser.get(location);
         expect(element(by.id('test-id')).getText()).toEqual('test text');
     });
-    it('mcalthrop: should pass basic test of data binding on AngularJS page', function () {
+    it('mcalthrop: should pass basic test of data binding', function () {
         var location = locations.mcalthrop,
             name = 'Bruce';
 
@@ -26,7 +26,7 @@ describe('simple protractor test', function () {
         element(by.model('yourName')).sendKeys(name);
         expect(element(by.binding('yourName')).getText()).toEqual('Hello ' + name);
     });
-    it('angularjs: should pass basic test of data binding on AngularJS page', function () {
+    it('angularjs: should pass basic test of data binding', function () {
         var location = locations.angularjs,
             name = 'Bruce';
 
