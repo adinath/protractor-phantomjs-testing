@@ -6,14 +6,31 @@ describe('simple protractor test', function () {
     beforeEach(function () {
         locations = {
             angularjs: 'http://www.angularjs.org',
+            mcalthropWithNoFonts: 'http://mcalthrop.github.io/protractor-phantomjs-testing/index.html',
             mcalthropWithEotFont: 'http://mcalthrop.github.io/protractor-phantomjs-testing/index-with-eot-font.html',
             mcalthropWithSvgFont: 'http://mcalthrop.github.io/protractor-phantomjs-testing/index-with-svg-font.html',
             mcalthropWithTtfFont: 'http://mcalthrop.github.io/protractor-phantomjs-testing/index-with-ttf-font.html',
             mcalthropWithWoffFont: 'http://mcalthrop.github.io/protractor-phantomjs-testing/index-with-woff-font.html',
-            mcalthropWithAllFonts: 'http://mcalthrop.github.io/protractor-phantomjs-testing/index.html'
+            mcalthropWithAllFonts: 'http://mcalthrop.github.io/protractor-phantomjs-testing/index-with-all-fonts.html'
         };
     });
 
+    it('mcalthrop (with NO fonts): should get text from named id', function () {
+        var location = locations.mcalthropWithNoFonts;
+
+        console.log('Browsing', location);
+        browser.get(location);
+        expect(element(by.id('test-id')).getText()).toEqual('test text');
+    });
+    it('mcalthrop (with NO fonts): should pass basic test of data binding', function () {
+        var location = locations.mcalthropWithNoFonts,
+            name = 'Bruce';
+
+        console.log('Browsing', location);
+        browser.get(location);
+        element(by.model('yourName')).sendKeys(name);
+        expect(element(by.binding('yourName')).getText()).toEqual('Hello ' + name);
+    });
     it('mcalthrop (with all EOT font): should get text from named id', function () {
         var location = locations.mcalthropWithEotFont;
 
