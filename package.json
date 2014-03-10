@@ -1,6 +1,6 @@
 {
     "name": "protractor-phantomjs-testing",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "repository": "https://github.com/mcalthrop/protractor-phantomjs-testing",
     "devDependencies": {
         "phantomjs": "~1.9",
