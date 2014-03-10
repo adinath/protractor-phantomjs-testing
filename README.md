@@ -48,11 +48,17 @@ $ run_tests_together.bash
 
 On a MAC running OSX Mavericks (10.9.2), I am seeing:
 
-* individually: all tests **always** pass
+* individually:
+    * the first test **always** fails
+    * all other tests **always** pass
 * together:
     * the first two tests **always** pass
     * the third test **sometimes** passes
     * the rest of the tests **always** fail
+
+On a Ubuntu system, and on a Gentoo, I am seeing the same behaviour.
+
+In every failure, the cause is `phantomjs` crashing.
 
 ## Customisation
 
