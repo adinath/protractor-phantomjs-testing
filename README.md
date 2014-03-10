@@ -30,6 +30,7 @@ If you want the test to run in other browsers, uncomment the relevant lines in t
 
 In the `phantomjs` definition, there is an alternative `'phantomjs.cli.args'` definition that provides more debugging information.
 
+In `test-spec.js`, you can comment-out any individual test by changing `it` to `xit`.
 
 ## Troubleshooting
 
