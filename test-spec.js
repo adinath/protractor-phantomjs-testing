@@ -10,7 +10,7 @@ describe('simple protractor test', function () {
         };
     });
 
-    xit('angularjs: should pass basic test of data binding on AngularJS page', function () {
+    it('angularjs: should pass basic test of data binding on AngularJS page', function () {
         var location = locations.angularjs,
             name = 'Bruce';
 
