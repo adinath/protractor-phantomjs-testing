@@ -14,7 +14,9 @@ On a separate project, I've been having some issues where `phantomjs` crashes wh
 
 Initial investigation has shown that fonts on the angularjs.org site _might_ be a problem, so I'm focusing on that.
 
-However, this is not definitely the reason for the failures, so the testing approach may change in the future.
+I have created some additional minimal AngularJS implementations, each of which includes a single FontAwesome CSS file.
+
+Note: fonts are not yet definitely the reason for the crashes, so the testing approach may change in the future.
 
 ## Setup
 
