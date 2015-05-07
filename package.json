@@ -4,6 +4,7 @@
     "repository": "https://github.com/mcalthrop/protractor-phantomjs-testing",
     "devDependencies": {
         "phantomjs": "~1.9",
-        "protractor": "0.20.1"
+        "protractor": "0.20.1",
+        "selenium-server-standalone-jar": "2.45.0"
     }
 }
